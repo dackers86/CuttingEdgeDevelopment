@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7f183034-70e8-4edf-8ac7-ae0f452916d0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/MyCarpetsService/MyCarpetsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="d54f3d26-f4a8-4ea6-8502-1c506c9f0955" SourceId="1" SourceUrl="http://localhost/MyCarpetsService/MyCarpetsService.svc?wsdl" />
+    <MetadataFile FileName="MyCarpetsService.xsd" MetadataType="Schema" ID="c97f3d0c-83ef-43b4-baec-8aca8c9201de" SourceId="1" SourceUrl="http://localhost/MyCarpetsService/MyCarpetsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="MyCarpetsService1.xsd" MetadataType="Schema" ID="9db3770b-3c1e-4b96-bc47-8a1b7179f045" SourceId="1" SourceUrl="http://localhost/MyCarpetsService/MyCarpetsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="MyCarpetsService.disco" MetadataType="Disco" ID="3a697b0e-72f0-413b-af62-7a094ff3232f" SourceId="1" SourceUrl="http://localhost/MyCarpetsService/MyCarpetsService.svc?disco" />
+    <MetadataFile FileName="MyCarpetsService2.xsd" MetadataType="Schema" ID="5144afe7-e281-4116-815e-cb023ca2be4a" SourceId="1" SourceUrl="http://localhost/MyCarpetsService/MyCarpetsService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

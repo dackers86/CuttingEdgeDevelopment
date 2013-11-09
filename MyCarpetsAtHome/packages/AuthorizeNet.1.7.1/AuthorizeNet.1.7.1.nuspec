@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AuthorizeNet</id>
+    <version>1.7.1</version>
+    <title>AuthorizeNet</title>
+    <authors>Authorize.Net</authors>
+    <owners>Authorize.Net</owners>
+    <licenseUrl>http://developer.authorize.net/downloads/</licenseUrl>
+    <projectUrl>http://developer.authorize.net/downloads/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The official .NET binaries for Authorize.Net. Contains AuthorizeNet.dll and AuthorizeNet.Helpers.dll</description>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <references>
+      <reference file="AuthorizeNet.dll" />
+      <reference file="AuthorizeNet.Helpers.dll" />
+    </references>
+  </metadata>
+</package>

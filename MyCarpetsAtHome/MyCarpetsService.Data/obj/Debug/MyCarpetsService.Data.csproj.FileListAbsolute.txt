@@ -1,0 +1,8 @@
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\bin\Debug\MyCarpetsService.Data.dll.config
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\bin\Debug\MyCarpetsService.Data.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\bin\Debug\MyCarpetsService.Data.pdb
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\bin\Debug\EntityFramework.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\bin\Debug\EntityFramework.xml
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\obj\Debug\MyCarpetsService.Data.csprojResolveAssemblyReference.cache
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\obj\Debug\MyCarpetsService.Data.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Data\obj\Debug\MyCarpetsService.Data.pdb

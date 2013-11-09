@@ -1,0 +1,1 @@
+C:\Code\MyCarpetsAtHome\MyCarpetsAtHomeAPI.Tests\obj\Debug\MyCarpetsAtHomeAPI.Tests.csprojResolveAssemblyReference.cache

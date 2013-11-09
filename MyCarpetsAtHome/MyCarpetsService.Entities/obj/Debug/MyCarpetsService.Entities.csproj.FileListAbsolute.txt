@@ -1,0 +1,4 @@
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Entities\bin\Debug\MyCarpetsService.Entities.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Entities\bin\Debug\MyCarpetsService.Entities.pdb
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Entities\obj\Debug\MyCarpetsService.Entities.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Entities\obj\Debug\MyCarpetsService.Entities.pdb

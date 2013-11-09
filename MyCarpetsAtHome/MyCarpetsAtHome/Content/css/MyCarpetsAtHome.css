@@ -1,0 +1,134 @@
+﻿body {
+    color: #777;
+    background: url('../Images/background7.jpg') repeat-x scroll center top;
+}
+
+header {
+    display: inline;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    letter-spacing: -0.04em;
+    border: 0;
+    font-weight: normal;
+    clear: both;
+    color: #555;
+}
+
+p {
+    line-height: 20px;
+}
+
+.content-Wrapper {
+    padding: 2% 15%;
+    display: block;
+}
+
+.mainmenu {
+    list-style: none;
+}
+
+    .mainmenu li {
+        float: left;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        vertical-align: top;
+        line-height: 0px;
+    }
+
+        .mainmenu li a {
+            display: inline-block;
+            font-size: 13px;
+            display: block;
+            position: relative;
+            padding: 25px 18px 4px 20px;
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #F0F0F0;
+            text-decoration: none;
+        }
+
+.mainlogo {
+    background: url('../Images/logo3.png') repeat-x scroll center top;
+    width: 260px;
+    height: 57px;
+    display: block;
+    float: left;
+    margin-right: 5%;
+}
+
+.promo-Wrapper {
+    padding: 1% 15%;
+    display: block;
+}
+
+    .promo-Wrapper .promo {
+        display: inline-block;
+        float: left;
+        width: 31%;
+        padding: 0 1%;
+    }
+
+
+.range {
+    padding: 0 5%;
+    width: 55%;
+    display: inline-block;
+    float: left;
+}
+
+.productcontainer {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    border: 5px solid red;
+}
+
+.ProductList {
+    margin: 10px 10px;
+}
+
+    .ProductList li {
+        width: 50px;
+        height: 30px;
+        display: inline;
+        float: left;
+        color: white;
+        padding: 20px 20px
+    }
+
+    .ProductList img {
+        width: 60px;
+        height: 40px;
+    }
+
+
+.headerimg {
+    border: 5px solid white;
+    display: inline-block;
+    float: left;
+    width: 700px;
+    height: 350px;
+}
+
+.carpetHeader {
+    background: url('../Images/Products/bigpic.png') no-repeat;
+    padding: 0px 20px;
+}
+
+.logoimg {
+    padding: 5px 5px;
+    display: block;
+    width: 210px;
+    height: 63px;
+}
+
+.Malabar {
+    background: url('../Images/Ranges/Malabar.gif') no-repeat;
+}

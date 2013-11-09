@@ -1,0 +1,15 @@
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Host.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Host.pdb
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Data.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Service.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\EntityFramework.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Entities.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Repository.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Data.pdb
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Service.pdb
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\EntityFramework.xml
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Entities.pdb
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\bin\MyCarpetsService.Repository.pdb
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\obj\Debug\MyCarpetsService.Host.csprojResolveAssemblyReference.cache
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\obj\Debug\MyCarpetsService.Host.dll
+C:\Code\MyCarpetsAtHome\MyCarpetsService.Host\obj\Debug\MyCarpetsService.Host.pdb

@@ -1,0 +1,46 @@
+﻿@{
+    var currentController = Request.RequestContext.RouteData.Values["Controller"].ToString().ToLower();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jqueryunobtrusive")
+    @Scripts.Render("~/bundles/custom")
+</head>
+<body>
+    <header>
+        <div class="content-Wrapper">
+            @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "mainlogo" })
+            <ul class="mainmenu">
+                <li>@Html.ActionLink("Carpets", "Carpets", "Home", new { }, new { @class = currentController == "home" ? "active" : "" })</li>
+                <li>@Html.ActionLink("Laminate", "Index", "Concepts", new { }, new { @class = currentController == "concepts" ? "active" : "" })</li>
+                <li>@Html.ActionLink("Vinyl", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
+                <li>@Html.ActionLink("Offers", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
+                <li>@Html.ActionLink("Stores", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
+                <li>@Html.ActionLink("Contact Us", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
+            </ul>
+        </div>
+    </header>
+    <div id="maincontent">
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+@*    <footer class="content-Wrapper">
+        <div>
+            <div class="float-left">
+                <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
+            </div>
+        </div>
+    </footer>*@
+</body>
+</html>

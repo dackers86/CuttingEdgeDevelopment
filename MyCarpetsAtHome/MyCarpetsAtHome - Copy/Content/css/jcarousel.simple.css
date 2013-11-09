@@ -1,0 +1,37 @@
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.slider {
+    margin: 10px 0;
+    width: 600px; /* Update to your slider width */
+    height: 257px; /* Update to your slider height */
+    position: relative;
+    overflow: hidden;
+    left: 0;
+}
+
+    .slider li {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+.slider-Progress {
+    text-align: center;
+}
+
+    .slider-Progress li {
+        background: url('../Images/red-button.png') no-repeat;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        padding: 0 5%;
+    }
+
+    .slider-Progress .active {
+        background: url('../Images/green-button.png') no-repeat;
+    }

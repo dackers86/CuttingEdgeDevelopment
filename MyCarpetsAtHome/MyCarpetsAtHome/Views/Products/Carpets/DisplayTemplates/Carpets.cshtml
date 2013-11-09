@@ -1,0 +1,43 @@
+﻿@using MyCarpetsAtHome.Models;
+@using System.Linq;
+@using MyCarpetsAtHome.MyCarpetsService;
+@using System.Web;
+@model List<Carpet>
+
+<div class="range">
+    <div class="headerimg carpetHeader">
+    </div>
+</div>
+
+<div class="productcontainer">
+    <ul id="flip">
+        <li class="logoimg Malabar"></li>
+        <li class="logoimg Malabar"></li>
+        <li class="logoimg Malabar"></li>
+    </ul>
+</div>
+
+<div class="ProductList">
+    @foreach (var carpet in Model)
+    {   
+        <ul>
+            <li>
+
+                <img src="~/Content/Images/Products/PaleRose.png">
+
+                @*                <p>@(((List<Lookup>)HttpContext.Current.Session["Lookups"]).First(l => l.Id == carpet.ColourId && l.LookupId == 6).Description)</p>
+
+                <p>@(((List<Lookup>)HttpContext.Current.Session["Lookups"]).First(l => l.Id == carpet.MaterialId && l.LookupId == 7).Description)</p>
+
+                <p>@(((List<Lookup>)HttpContext.Current.Session["Lookups"]).First(l => l.Id == carpet.StyleId && l.LookupId == 8).Description)</p>
+
+                @foreach (var width in carpet.Widths)
+                {
+                    <p>@(((List<Lookup>)HttpContext.Current.Session["Lookups"]).First(l => l.Id == width.TypeId && l.LookupId == 20).Description) Metre Squared</p>
+                }*@
+            </li>
+        </ul>
+    }
+</div>
+</ul>
+

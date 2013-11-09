@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MyCarpetsService.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MyCarpetsService.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfProduct">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Product" nillable="true" type="tns:Product" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProduct" nillable="true" type="tns:ArrayOfProduct" />
+  <xs:complexType name="Product">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ColourId" type="xs:int" />
+      <xs:element minOccurs="0" name="ColoursLookup" nillable="true" type="tns:Lookup" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Manufacturer" nillable="true" type="tns:Manufacturer" />
+      <xs:element minOccurs="0" name="ManufacturerId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="MaterialId" type="xs:int" />
+      <xs:element minOccurs="0" name="MaterialsLookup" nillable="true" type="tns:Lookup" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Range" nillable="true" type="tns:Range" />
+      <xs:element minOccurs="0" name="RangeId" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="StyleId" type="xs:int" />
+      <xs:element minOccurs="0" name="StylesLookup" nillable="true" type="tns:Lookup" />
+      <xs:element minOccurs="0" name="TypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="TypesLookup" nillable="true" type="tns:Lookup" />
+      <xs:element minOccurs="0" name="Widths" nillable="true" type="tns:ArrayOfWidth" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Product" nillable="true" type="tns:Product" />
+  <xs:complexType name="Lookup">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="LookupId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Lookup" nillable="true" type="tns:Lookup" />
+  <xs:complexType name="Manufacturer">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Products" nillable="true" type="tns:ArrayOfProduct" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Manufacturer" nillable="true" type="tns:Manufacturer" />
+  <xs:complexType name="Range">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Products" nillable="true" type="tns:ArrayOfProduct" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Range" nillable="true" type="tns:Range" />
+  <xs:complexType name="ArrayOfWidth">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Width" nillable="true" type="tns:Width" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWidth" nillable="true" type="tns:ArrayOfWidth" />
+  <xs:complexType name="Width">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Lookup" nillable="true" type="tns:Lookup" />
+      <xs:element minOccurs="0" name="ProductId" type="xs:int" />
+      <xs:element minOccurs="0" name="TypeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Width" nillable="true" type="tns:Width" />
+</xs:schema>

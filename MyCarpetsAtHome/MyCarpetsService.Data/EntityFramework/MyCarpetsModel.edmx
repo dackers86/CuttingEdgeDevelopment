@@ -1,0 +1,550 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MyCarpetsAtHomeModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="MyCarpetsAtHomeModelStoreContainer">
+          <EntitySet Name="Lookups" EntityType="MyCarpetsAtHomeModel.Store.Lookups" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Manufacturers" EntityType="MyCarpetsAtHomeModel.Store.Manufacturers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Products" EntityType="MyCarpetsAtHomeModel.Store.Products" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Ranges" EntityType="MyCarpetsAtHomeModel.Store.Ranges" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Widths" EntityType="MyCarpetsAtHomeModel.Store.Widths" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Products_Lookups" Association="MyCarpetsAtHomeModel.Store.FK_Products_Lookups">
+            <End Role="Lookups" EntitySet="Lookups" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Lookups1" Association="MyCarpetsAtHomeModel.Store.FK_Products_Lookups1">
+            <End Role="Lookups" EntitySet="Lookups" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Lookups2" Association="MyCarpetsAtHomeModel.Store.FK_Products_Lookups2">
+            <End Role="Lookups" EntitySet="Lookups" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Lookups3" Association="MyCarpetsAtHomeModel.Store.FK_Products_Lookups3">
+            <End Role="Lookups" EntitySet="Lookups" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Manufacturers" Association="MyCarpetsAtHomeModel.Store.FK_Products_Manufacturers">
+            <End Role="Manufacturers" EntitySet="Manufacturers" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Products" Association="MyCarpetsAtHomeModel.Store.FK_Products_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Products1" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Products1" Association="MyCarpetsAtHomeModel.Store.FK_Products_Products1">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Products1" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Ranges" Association="MyCarpetsAtHomeModel.Store.FK_Products_Ranges">
+            <End Role="Ranges" EntitySet="Ranges" />
+            <End Role="Products" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Widths_Lookups" Association="MyCarpetsAtHomeModel.Store.FK_Widths_Lookups">
+            <End Role="Lookups" EntitySet="Lookups" />
+            <End Role="Widths" EntitySet="Widths" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Widths_Products" Association="MyCarpetsAtHomeModel.Store.FK_Widths_Products">
+            <End Role="Products" EntitySet="Products" />
+            <End Role="Widths" EntitySet="Widths" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Widths_Widths" Association="MyCarpetsAtHomeModel.Store.FK_Widths_Widths">
+            <End Role="Widths" EntitySet="Widths" />
+            <End Role="Widths1" EntitySet="Widths" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Lookups">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LookupId" Type="int" />
+          <Property Name="Description" Type="nchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Manufacturers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Products">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TypeId" Type="int" Nullable="false" />
+          <Property Name="RangeId" Type="int" />
+          <Property Name="ManufacturerId" Type="int" />
+          <Property Name="ColourId" Type="int" Nullable="false" />
+          <Property Name="MaterialId" Type="int" Nullable="false" />
+          <Property Name="StyleId" Type="int" Nullable="false" />
+          <Property Name="Price" Type="money" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ranges">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="nchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Widths">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="TypeId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Products_Lookups">
+          <End Role="Lookups" Type="MyCarpetsAtHomeModel.Store.Lookups" Multiplicity="1" />
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="MaterialId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Lookups1">
+          <End Role="Lookups" Type="MyCarpetsAtHomeModel.Store.Lookups" Multiplicity="1" />
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="ColourId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Lookups2">
+          <End Role="Lookups" Type="MyCarpetsAtHomeModel.Store.Lookups" Multiplicity="1" />
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="StyleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Lookups3">
+          <End Role="Lookups" Type="MyCarpetsAtHomeModel.Store.Lookups" Multiplicity="1" />
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Manufacturers">
+          <End Role="Manufacturers" Type="MyCarpetsAtHomeModel.Store.Manufacturers" Multiplicity="0..1" />
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Manufacturers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="ManufacturerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Products">
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="1" />
+          <End Role="Products1" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Products1">
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="1" />
+          <End Role="Products1" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Ranges">
+          <End Role="Ranges" Type="MyCarpetsAtHomeModel.Store.Ranges" Multiplicity="0..1" />
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ranges">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Products">
+              <PropertyRef Name="RangeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Widths_Lookups">
+          <End Role="Lookups" Type="MyCarpetsAtHomeModel.Store.Lookups" Multiplicity="1" />
+          <End Role="Widths" Type="MyCarpetsAtHomeModel.Store.Widths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookups">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Widths">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Widths_Products">
+          <End Role="Products" Type="MyCarpetsAtHomeModel.Store.Products" Multiplicity="1" />
+          <End Role="Widths" Type="MyCarpetsAtHomeModel.Store.Widths" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Products">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Widths">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Widths_Widths">
+          <End Role="Widths" Type="MyCarpetsAtHomeModel.Store.Widths" Multiplicity="1" />
+          <End Role="Widths1" Type="MyCarpetsAtHomeModel.Store.Widths" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Widths">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Widths1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MyCarpetsAtHomeModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="MyCarpetsAtHomeEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Lookups" EntityType="MyCarpetsAtHomeModel.Lookup" />
+          <EntitySet Name="Manufacturers" EntityType="MyCarpetsAtHomeModel.Manufacturer" />
+          <EntitySet Name="Products" EntityType="MyCarpetsAtHomeModel.Product" />
+          <EntitySet Name="Ranges" EntityType="MyCarpetsAtHomeModel.Range" />
+          <EntitySet Name="Widths" EntityType="MyCarpetsAtHomeModel.Width" />
+          <AssociationSet Name="FK_Products_Lookups" Association="MyCarpetsAtHomeModel.FK_Products_Lookups">
+            <End Role="Lookup" EntitySet="Lookups" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Lookups1" Association="MyCarpetsAtHomeModel.FK_Products_Lookups1">
+            <End Role="Lookup" EntitySet="Lookups" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Lookups2" Association="MyCarpetsAtHomeModel.FK_Products_Lookups2">
+            <End Role="Lookup" EntitySet="Lookups" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Lookups3" Association="MyCarpetsAtHomeModel.FK_Products_Lookups3">
+            <End Role="Lookup" EntitySet="Lookups" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Widths_Lookups" Association="MyCarpetsAtHomeModel.FK_Widths_Lookups">
+            <End Role="Lookup" EntitySet="Lookups" />
+            <End Role="Width" EntitySet="Widths" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Manufacturers" Association="MyCarpetsAtHomeModel.FK_Products_Manufacturers">
+            <End Role="Manufacturer" EntitySet="Manufacturers" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Products" Association="MyCarpetsAtHomeModel.FK_Products_Products">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Product1" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Products1" Association="MyCarpetsAtHomeModel.FK_Products_Products1">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Product1" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Products_Ranges" Association="MyCarpetsAtHomeModel.FK_Products_Ranges">
+            <End Role="Range" EntitySet="Ranges" />
+            <End Role="Product" EntitySet="Products" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Widths_Products" Association="MyCarpetsAtHomeModel.FK_Widths_Products">
+            <End Role="Product" EntitySet="Products" />
+            <End Role="Width" EntitySet="Widths" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Widths_Widths" Association="MyCarpetsAtHomeModel.FK_Widths_Widths">
+            <End Role="Width" EntitySet="Widths" />
+            <End Role="Width1" EntitySet="Widths" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Lookup">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="LookupId" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Manufacturer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Products" Relationship="MyCarpetsAtHomeModel.FK_Products_Manufacturers" FromRole="Manufacturer" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="TypeId" Nullable="false" />
+          <Property Type="Int32" Name="RangeId" />
+          <Property Type="Int32" Name="ManufacturerId" />
+          <Property Type="Int32" Name="ColourId" Nullable="false" />
+          <Property Type="Int32" Name="MaterialId" Nullable="false" />
+          <Property Type="Int32" Name="StyleId" Nullable="false" />
+          <Property Type="Decimal" Name="Price" Nullable="false" Precision="19" Scale="4" />
+          <NavigationProperty Name="MaterialsLookup" Relationship="MyCarpetsAtHomeModel.FK_Products_Lookups" FromRole="Product" ToRole="Lookup" />
+          <NavigationProperty Name="ColoursLookup" Relationship="MyCarpetsAtHomeModel.FK_Products_Lookups1" FromRole="Product" ToRole="Lookup" />
+          <NavigationProperty Name="StylesLookup" Relationship="MyCarpetsAtHomeModel.FK_Products_Lookups2" FromRole="Product" ToRole="Lookup" />
+          <NavigationProperty Name="TypesLookup" Relationship="MyCarpetsAtHomeModel.FK_Products_Lookups3" FromRole="Product" ToRole="Lookup" />
+          <NavigationProperty Name="Manufacturer" Relationship="MyCarpetsAtHomeModel.FK_Products_Manufacturers" FromRole="Product" ToRole="Manufacturer" />
+          <NavigationProperty Name="Range" Relationship="MyCarpetsAtHomeModel.FK_Products_Ranges" FromRole="Product" ToRole="Range" />
+          <NavigationProperty Name="Widths" Relationship="MyCarpetsAtHomeModel.FK_Widths_Products" FromRole="Product" ToRole="Width" />
+        </EntityType>
+        <EntityType Name="Range">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="Description" MaxLength="50" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="Products" Relationship="MyCarpetsAtHomeModel.FK_Products_Ranges" FromRole="Range" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Width">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="ProductId" Nullable="false" />
+          <Property Type="Int32" Name="TypeId" Nullable="false" />
+          <NavigationProperty Name="Lookup" Relationship="MyCarpetsAtHomeModel.FK_Widths_Lookups" FromRole="Width" ToRole="Lookup" />
+        </EntityType>
+        <Association Name="FK_Products_Lookups">
+          <End Type="MyCarpetsAtHomeModel.Lookup" Role="Lookup" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="MaterialId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Lookups1">
+          <End Type="MyCarpetsAtHomeModel.Lookup" Role="Lookup" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="ColourId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Lookups2">
+          <End Type="MyCarpetsAtHomeModel.Lookup" Role="Lookup" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="StyleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Lookups3">
+          <End Type="MyCarpetsAtHomeModel.Lookup" Role="Lookup" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Widths_Lookups">
+          <End Type="MyCarpetsAtHomeModel.Lookup" Role="Lookup" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Width" Role="Width" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lookup">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Width">
+              <PropertyRef Name="TypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Manufacturers">
+          <End Type="MyCarpetsAtHomeModel.Manufacturer" Role="Manufacturer" Multiplicity="0..1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Manufacturer">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="ManufacturerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Products">
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Products1">
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Products_Ranges">
+          <End Type="MyCarpetsAtHomeModel.Range" Role="Range" Multiplicity="0..1" />
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Range">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="RangeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Widths_Products">
+          <End Type="MyCarpetsAtHomeModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Width" Role="Width" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Width">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Widths_Widths">
+          <End Type="MyCarpetsAtHomeModel.Width" Role="Width" Multiplicity="1" />
+          <End Type="MyCarpetsAtHomeModel.Width" Role="Width1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Width">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Width1">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MyCarpetsAtHomeModelStoreContainer" CdmEntityContainer="MyCarpetsAtHomeEntities">
+          <EntitySetMapping Name="Lookups">
+            <EntityTypeMapping TypeName="MyCarpetsAtHomeModel.Lookup">
+              <MappingFragment StoreEntitySet="Lookups">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="LookupId" ColumnName="LookupId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Manufacturers">
+            <EntityTypeMapping TypeName="MyCarpetsAtHomeModel.Manufacturer">
+              <MappingFragment StoreEntitySet="Manufacturers">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Products">
+            <EntityTypeMapping TypeName="MyCarpetsAtHomeModel.Product">
+              <MappingFragment StoreEntitySet="Products">
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="StyleId" ColumnName="StyleId" />
+                <ScalarProperty Name="MaterialId" ColumnName="MaterialId" />
+                <ScalarProperty Name="ColourId" ColumnName="ColourId" />
+                <ScalarProperty Name="ManufacturerId" ColumnName="ManufacturerId" />
+                <ScalarProperty Name="RangeId" ColumnName="RangeId" />
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ranges">
+            <EntityTypeMapping TypeName="MyCarpetsAtHomeModel.Range">
+              <MappingFragment StoreEntitySet="Ranges">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Widths">
+            <EntityTypeMapping TypeName="MyCarpetsAtHomeModel.Width">
+              <MappingFragment StoreEntitySet="Widths">
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

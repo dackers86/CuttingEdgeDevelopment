@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="544119ad854a474181db01164187ad07" Name="Diagram1">
+        <EntityTypeShape EntityType="MyCarpetsAtHomeModel.Lookup" Width="1.5" PointX="0.75" PointY="3.5" />
+        <EntityTypeShape EntityType="MyCarpetsAtHomeModel.Manufacturer" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MyCarpetsAtHomeModel.Product" Width="1.5" PointX="3" PointY="2.375" />
+        <EntityTypeShape EntityType="MyCarpetsAtHomeModel.Range" Width="1.5" PointX="0.75" PointY="7.125" />
+        <EntityTypeShape EntityType="MyCarpetsAtHomeModel.Width" Width="1.5" PointX="5.25" PointY="3.5" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Lookups" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Lookups1" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Lookups2" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Lookups3" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Widths_Lookups" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Manufacturers" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Products" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Products1" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Products_Ranges" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Widths_Products" />
+        <AssociationConnector Association="MyCarpetsAtHomeModel.FK_Widths_Widths" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
