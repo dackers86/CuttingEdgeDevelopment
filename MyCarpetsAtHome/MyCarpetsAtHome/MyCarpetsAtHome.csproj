@@ -185,6 +185,8 @@
     <Content Include="bin\System.Web.WebPages.Deployment.dll" />
     <Content Include="bin\System.Web.WebPages.dll" />
     <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\css\jcarousel.simple.css" />
     <Content Include="Content\css\Jflip.css" />
     <Content Include="Content\css\MyCarpetsAtHome.css" />
@@ -193,7 +195,10 @@
     <Content Include="Content\Images\banner_1 - Copy.png" />
     <Content Include="Content\Images\banner_1.png" />
     <Content Include="Content\Images\carpet-promo.jpg" />
+    <Content Include="Content\Images\glyphicons-halflings-white.png" />
+    <Content Include="Content\Images\glyphicons-halflings.png" />
     <Content Include="Content\Images\green-button.png" />
+    <Content Include="Content\Images\Image1.jpg" />
     <Content Include="Content\Images\Image1.png" />
     <Content Include="Content\Images\large-car.png" />
     <Content Include="Content\Images\logo3.png" />
@@ -202,6 +207,7 @@
     <Content Include="Content\Images\Products\PaleRose.png" />
     <Content Include="Content\Images\Ranges\Malabar.gif" />
     <Content Include="Content\Images\red-button.png" />
+    <Content Include="Content\Images\YoungBrunette.png" />
     <Content Include="Content\themes\base\images\animated-overlay.gif" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -270,6 +276,8 @@
     <Content Include="obj\Debug\MyCarpetsAtHome.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\TempPE\Service References.MyCarpetsService.Reference.cs.dll" />
     <None Include="Scripts\jquery-1.8.3.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.8.3.js" />
     <Content Include="Scripts\jquery-1.8.3.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />

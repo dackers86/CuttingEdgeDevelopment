@@ -30,8 +30,12 @@ namespace MyCarpetsAtHome
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
                         "~/Scripts/MyCarpetsAtHome.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+                        "~/Scripts/bootstrap.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/css/MyCarpetsAtHome.css",
-                                                                 "~/Content/css/jcarousel.simple.css"));
+                                                                 "~/Content/css/jcarousel.simple.css",
+                                                                 "~/Content/css/bootstrap.css"));
         }
     }
 }

@@ -1,8 +1,4 @@
-﻿@{
-    var currentController = Request.RequestContext.RouteData.Values["Controller"].ToString().ToLower();
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -15,30 +11,49 @@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jqueryunobtrusive")
     @Scripts.Render("~/bundles/custom")
+    @Scripts.Render("~/bundles/bootstrap")
 </head>
 <body>
     <header>
-        <div class="content-Wrapper">
-            @Html.ActionLink(" ", "Index", "Home", new { }, new { @class = "mainlogo" })
-            <ul class="mainmenu">
-                <li>@Html.ActionLink("Carpets", "Carpets", "Products", new { }, new { @class = currentController == "Products" ? "active" : "" })</li>
-                <li>@Html.ActionLink("Laminate", "Index", "Concepts", new { }, new { @class = currentController == "concepts" ? "active" : "" })</li>
-                <li>@Html.ActionLink("Vinyl", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
-                <li>@Html.ActionLink("Offers", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
-                <li>@Html.ActionLink("Stores", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
-                <li>@Html.ActionLink("Contact Us", "Index", "Code", new { }, new { @class = currentController == "code" ? "active" : "" })</li>
-            </ul>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>My Carpets At Home</h2>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("LOG ON", "Login", "Products", new { }, new { @class = "" })</li>
+                            <li>@Html.ActionLink("MY ACCOUNT", "Carpets", "Products", new { }, new { @class = "" })</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("CARPETS", "Carpets", "Products", new { }, new { @class = "active" })</li>
+                    <li>@Html.ActionLink("LAMINATE", "Index", "Concepts", new { }, new { @class = "" })</li>
+                    <li>@Html.ActionLink("VINYL", "Index", "Code", new { }, new { @class = "" })</li>
+                    <li>@Html.ActionLink("OFFERS", "Index", "Code", new { }, new { @class = "" })</li>
+                    <li>@Html.ActionLink("STORES", "Index", "Code", new { }, new { @class = "" })</li>
+                    <li>@Html.ActionLink("CONTACT US", "Index", "Code", new { }, new { @class = "" })</li>
+                </ul>
+            </div>
         </div>
     </header>
     <section class="content-wrapper main-content clear-fix">
         @RenderBody()
     </section>
-    @*    <footer class="content-Wrapper">
-        <div>
-            <div class="float-left">
-                <p>&copy; @DateTime.Now.Year - My ASP.NET MVC Application</p>
-            </div>
-        </div>
-    </footer>*@
+    <footer class="content-Wrapper">
+        This is the footer
+    </footer>
 </body>
 </html>
