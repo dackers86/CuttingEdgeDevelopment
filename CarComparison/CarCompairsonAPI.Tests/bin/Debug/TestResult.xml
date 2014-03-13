@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Code\Katas\CarComparison\CarCompairsonAPI.Tests\bin\Debug\CarCompairsonAPI.Tests.dll" total="3" errors="3" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-03-12" time="22:03:02">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.6413" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="DARREN-LAPTOP" user="dackers" user-domain="Darren-Laptop" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Code\Katas\CarComparison\CarCompairsonAPI.Tests\bin\Debug\CarCompairsonAPI.Tests.dll" executed="True" result="Failure" success="False" time="1.749" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="CarCompairsonAPI" executed="True" result="Failure" success="False" time="1.727" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Tests" executed="True" result="Failure" success="False" time="1.726" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Controllers" executed="True" result="Failure" success="False" time="1.725" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="CarControllerTest" executed="True" result="Failure" success="False" time="1.722" asserts="0">
+                    <results>
+                      <test-case name="CarCompairsonAPI.Tests.Controllers.CarControllerTest.Create" executed="True" result="Error" success="False" time="1.664" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                          <stack-trace><![CDATA[at CarCompairsonAPI.Tests.Controllers.CarControllerTest.SetupTests() in c:\Code\Katas\CarComparison\CarCompairsonAPI.Tests\Controllers\CarControllerTest.cs:line 22
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="CarCompairsonAPI.Tests.Controllers.CarControllerTest.Get" executed="True" result="Error" success="False" time="0.006" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                          <stack-trace><![CDATA[at CarCompairsonAPI.Tests.Controllers.CarControllerTest.SetupTests() in c:\Code\Katas\CarComparison\CarCompairsonAPI.Tests\Controllers\CarControllerTest.cs:line 22
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="CarCompairsonAPI.Tests.Controllers.CarControllerTest.GetById" executed="True" result="Error" success="False" time="0.001" asserts="0">
+                        <failure>
+                          <message><![CDATA[SetUp : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                          <stack-trace><![CDATA[at CarCompairsonAPI.Tests.Controllers.CarControllerTest.SetupTests() in c:\Code\Katas\CarComparison\CarCompairsonAPI.Tests\Controllers\CarControllerTest.cs:line 22
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
