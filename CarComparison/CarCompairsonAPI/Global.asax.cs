@@ -1,8 +1,11 @@
 ﻿using CarCompairsonAPI.EntityFramework;
+using CarComparisonAPI.Formatters;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -24,10 +27,6 @@ namespace CarCompairsonAPI
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-
-            Database.SetInitializer(new ContextInitialiser());
-            CarComparisonContext context = new CarComparisonContext();
-            context.Database.Initialize(true);
         }
     }
 }

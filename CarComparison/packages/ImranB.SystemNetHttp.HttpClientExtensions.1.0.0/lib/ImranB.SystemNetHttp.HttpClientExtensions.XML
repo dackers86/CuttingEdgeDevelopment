@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImranB.SystemNetHttp.HttpClientExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:ImranB.SystemNetHttp.HttpClientExtensions">
+            <summary>
+            Extension methods that aid in making formatted requests using <see cref="T:System.Net.Http.HttpClient"/>.
+            </summary>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.DeleteAsync(System.Net.Http.HttpClient,System.String,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a DELETE request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.DeleteAsync(System.Net.Http.HttpClient,System.Uri,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a DELETE request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>		
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.DeleteAsync(System.Net.Http.HttpClient,System.String,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.DeleteAsync(System.Net.Http.HttpClient,System.Uri,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a DELETE request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.String,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.Uri,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpCompletionOption,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="completionOption">An HTTP completion option value that indicates when the operation should be considered completed.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpCompletionOption,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri with an HTTP completion option as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.String,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.Uri,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri with an HTTP completion option and a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="completionOption">An HTTP  completion option value that indicates when the operation should be considered completed.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetByteArrayAsync(System.Net.Http.HttpClient,System.String,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetByteArrayAsync(System.Net.Http.HttpClient,System.Uri,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri and return the response body as a byte array in an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetStreamAsync(System.Net.Http.HttpClient,System.String,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetStreamAsync(System.Net.Http.HttpClient,System.Uri,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri and return the response body as a stream in an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetStringAsync(System.Net.Http.HttpClient,System.String,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.GetStringAsync(System.Net.Http.HttpClient,System.Uri,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a GET request to the specified Uri and return the response body as a string in an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a POST request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a POST request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a POST request with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a POST request with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a PUT request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a PUT request to the specified Uri as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a PUT request with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send a PUT request with a cancellation token as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="requestUri" /> was null.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.SendAsync(System.Net.Http.HttpClient,System.Net.Http.HttpRequestMessage,ImranB.SystemNetHttp.Browser)">
+            <summary>Send an HTTP request as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="request">The HTTP request message to send.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was null.</exception>
+            <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.SendAsync(System.Net.Http.HttpClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send an HTTP request as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="request">The HTTP request message to send.</param>
+            <param name="cancellationToken">The cancellation token to cancel operation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was null.</exception>
+            <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.SendAsync(System.Net.Http.HttpClient,System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,ImranB.SystemNetHttp.Browser)">
+            <summary>Send an HTTP request as an asynchronous operation. </summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="request">The HTTP request message to send.</param>
+            <param name="completionOption">When the operation should complete (as soon as a response is available or after reading the whole response content).</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was null.</exception>
+            <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.SendAsync(System.Net.Http.HttpClient,System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>Send an HTTP request as an asynchronous operation.</summary>
+            <returns>Returns <see cref="T:System.Threading.Tasks.Task`1" />.The task object representing the asynchronous operation.</returns>
+            <param name="client">The client used to make the request.</param>
+            <param name="request">The HTTP request message to send.</param>
+            <param name="completionOption">When the operation should complete (as soon as a response is available or after reading the whole response content).</param>
+            <param name="cancellationToken">The cancellation token to cancel operation.</param>
+            <param name="browser">The browser making the request.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was null.</exception>
+            <exception cref="T:System.InvalidOperationException">The request message was already sent by the <see cref="T:System.Net.Http.HttpClient" /> instance.</exception>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as JSON.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.JsonMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>        
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as JSON.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.JsonMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsXmlAsync``1(System.Net.Http.HttpClient,System.String,``0,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as XML.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.XmlMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsXmlAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as XML.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.XmlMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <seealso cref="!:PostAsync&lt;T&gt;(HttpClient, string, T, MediaTypeFormatter, string, CancellationToken)"/>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <seealso cref="!:PostAsync&lt;T&gt;(HttpClient, string, T, MediaTypeFormatter, string, CancellationToken)"/>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.String,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <seealso cref="!:PostAsync&lt;T&gt;(HttpClient, string, T, MediaTypeFormatter, string, CancellationToken)"/>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="mediaType">The authoritative value of the request's content's Content-Type header. Can be <c>null</c> in which case the
+            <paramref name="formatter">formatter's</paramref> default content type will be used.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.String,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="mediaType">The authoritative value of the request's content's Content-Type header. Can be <c>null</c> in which case the
+            <paramref name="formatter">formatter's</paramref> default content type will be used.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PostAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a POST request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="mediaType">The authoritative value of the request's content's Content-Type header. Can be <c>null</c> in which case the
+            <paramref name="formatter">formatter's</paramref> default content type will be used.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as JSON.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.JsonMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsJsonAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as JSON.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.JsonMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsXmlAsync``1(System.Net.Http.HttpClient,System.String,``0,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as XML.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.XmlMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsXmlAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with the given <paramref name="value"/> serialized
+            as XML.
+            </summary>
+            <remarks>
+            This method uses the default instance of <see cref="T:System.Net.Http.Formatting.XmlMediaTypeFormatter"/>.
+            </remarks>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <seealso cref="!:PutAsync&lt;T&gt;(HttpClient, string, T, MediaTypeFormatter, string, CancellationToken)"/>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <seealso cref="!:PutAsync&lt;T&gt;(HttpClient, string, T, MediaTypeFormatter, string, CancellationToken)"/>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.String,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <seealso cref="!:PutAsync&lt;T&gt;(HttpClient, string, T, MediaTypeFormatter, string, CancellationToken)"/>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="mediaType">The authoritative value of the request's content's Content-Type header. Can be <c>null</c> in which case the
+            <paramref name="formatter">formatter's</paramref> default content type will be used.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.String,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="mediaType">The authoritative value of the request's content's Content-Type header. Can be <c>null</c> in which case the
+            <paramref name="formatter">formatter's</paramref> default content type will be used.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:ImranB.SystemNetHttp.HttpClientExtensions.PutAsync``1(System.Net.Http.HttpClient,System.String,``0,System.Net.Http.Formatting.MediaTypeFormatter,System.Net.Http.Headers.MediaTypeHeaderValue,System.Threading.CancellationToken,ImranB.SystemNetHttp.Browser)">
+            <summary>
+            Sends a PUT request as an asynchronous operation to the specified Uri with <paramref name="value"/>
+            serialized using the given <paramref name="formatter"/>.
+            </summary>
+            <typeparam name="T">The type of <paramref name="value"/>.</typeparam>
+            <param name="client">The client used to make the request.</param>
+            <param name="requestUri">The Uri the request is sent to.</param>
+            <param name="value">The value that will be placed in the request's entity body.</param>
+            <param name="formatter">The formatter used to serialize the <paramref name="value"/>.</param>
+            <param name="mediaType">The authoritative value of the request's content's Content-Type header. Can be <c>null</c> in which case the
+            <paramref name="formatter">formatter's</paramref> default content type will be used.</param>
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <param name="browser">The browser making the request.</param>
+            <returns>A task object representing the asynchronous operation.</returns>
+        </member>
+    </members>
+</doc>

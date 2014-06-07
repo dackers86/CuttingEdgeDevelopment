@@ -7,6 +7,9 @@ using CarComparison;
 using CarComparison.Controllers;
 using Rhino.Mocks;
 using NUnit.Framework;
+using CarCompairsonAPI.Repository;
+using CarCompairsonAPI.Controllers;
+using CarCompairsonAPI.Models;
 
 
 namespace CarComparison.Tests.Controllers
@@ -14,20 +17,20 @@ namespace CarComparison.Tests.Controllers
     [TestFixture]
     public class HomeControllerTest
     {
+        private ISearchController _mockAPISearchController;
+
+        [SetUp]
+        public void Setup()
+        {
+            _mockAPISearchController = MockRepository.GenerateMock<ISearchController>();
+        }
+
         [Test]
         public void Index()
         {
             HomeController controller = new HomeController();
             ViewResult result = controller.Index() as ViewResult;
-        }
 
-        [Test]
-        public void Default_Search_Loads_As_Expected()
-        {
-            //HomeController controller = new HomeController();
-            ////var searchResults = CarComparisonService.GetAll();
-            //ViewResult result = controller.Index() as ViewResult;
-            //Assert.AreEqual(searchResults.count, 1);
         }
     }
 }

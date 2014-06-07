@@ -22,11 +22,6 @@ namespace MyCarpetsAtHome.DependencyInjection
 
                 x.For<IService>().Use(new MyCarpetsService.ServiceClient("Default"));
             });
-
-            //ObjectFactory.Initialize(x => x.AddRegistry(typeof(IServiceChannel()));
-
-
-
         }
     }
 }

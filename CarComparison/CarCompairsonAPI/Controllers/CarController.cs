@@ -11,41 +11,37 @@ namespace CarCompairsonAPI.Controllers
 {
     public class CarController : ApiController, ICarController
     {
-        public CarRepository carRepository;
+        public ICarRepository carRepository;
 
         public CarController()
         {
+            carRepository = new CarRepository();
         }
 
-        public CarController(CarRepository CarRepository)
+        public CarController(ICarRepository CarRepository)
         {
             carRepository = CarRepository;
         }
 
-        // GET api/values
         public IList<Car> Get()
         {
             return carRepository.GetAllCars();
         }
 
-        // GET api/values/5
         public Car Get(int id)
         {
             return carRepository.GetCarById(id);
         }
 
-        // POST api/values
         public Car Post(Car car)
         {
-            return new Car { };
+            return carRepository.AddCar(car);
         }
 
-        // PUT api/values/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE api/values/5
         public void Delete(int id)
         {
         }

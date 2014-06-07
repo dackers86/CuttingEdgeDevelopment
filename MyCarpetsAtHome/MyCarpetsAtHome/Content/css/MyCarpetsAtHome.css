@@ -19,7 +19,7 @@ a {
     min-height: 80%;
     overflow: hidden;
     background: url(../Images/header.jpg) no-repeat center center fixed;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 50% 50%;
 }
@@ -31,6 +31,37 @@ a {
     margin: 0;
 }
 
-.footer {
+header {
+position: absolute;
+left: 141px;
+z-index: 80;
+width: 100%;
+line-height: 12px;
+border: 0px solid #eee;
+margin: 0;
+padding: 0;
+list-style: none;
+}
 
+.headerText {
+    padding-top: 8%;
+}
+
+footer {
+}
+
+.footerheader {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #1F0A00;
+}
+
+.footerbody {
+    color: white;
+    background-color: rgba(31, 10, 0, 0.5);
 }

@@ -1,0 +1,13 @@
+﻿<label ng-repeat="manufacturer in searchQuery.Manufacturer">
+    <label>
+        <input type="checkbox" ng-model="manufacturer.isSelected" />
+        <span>{{manufacturer.Name}}</span>
+    </label>
+</label>
+
+{{manufacturer.isSelected}}
+
+<br />
+<br />
+<br />
+<br />

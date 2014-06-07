@@ -1,8 +1,13 @@
-﻿using System;
+﻿using CarCompairsonAPI.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Mvc;
+using System.Net.Http.Formatting;
+using CarComparison.Helpers;
 
 namespace CarComparison.Controllers
 {
@@ -10,8 +15,6 @@ namespace CarComparison.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
-
             return View();
         }
 

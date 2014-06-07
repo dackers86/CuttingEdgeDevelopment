@@ -1,0 +1,70 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'potractor' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json CarComparison@1.0.0 No repository field.
+6 warn package.json CarComparison@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'potractor', null ]
+9 verbose cache add name=undefined spec="potractor" args=["potractor",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'potractor',
+10 verbose parsed url   path: 'potractor',
+10 verbose parsed url   href: 'potractor' }
+11 silly lockFile 6cfdac41-potractor potractor
+12 verbose lock potractor C:\Users\dackers\AppData\Roaming\npm-cache\6cfdac41-potractor.lock
+13 silly lockFile 6cfdac41-potractor potractor
+14 silly lockFile 6cfdac41-potractor potractor
+15 verbose addNamed [ 'potractor', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 212e188e-potractor potractor@
+18 verbose lock potractor@ C:\Users\dackers\AppData\Roaming\npm-cache\212e188e-potractor.lock
+19 silly addNameRange { name: 'potractor', range: '*', hasData: false }
+20 verbose url raw potractor
+21 verbose url resolving [ 'https://registry.npmjs.org/', './potractor' ]
+22 verbose url resolved https://registry.npmjs.org/potractor
+23 info trying registry request attempt 1 at 17:55:34
+24 http GET https://registry.npmjs.org/potractor
+25 http 404 https://registry.npmjs.org/potractor
+26 silly registry.get cb [ 404,
+26 silly registry.get   { date: 'Sun, 25 May 2014 16:55:34 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     'cache-control': 'max-age=0',
+26 silly registry.get     'content-length': '52',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-lo80-LHR',
+26 silly registry.get     'x-cache': 'MISS, MISS',
+26 silly registry.get     'x-cache-hits': '0, 0',
+26 silly registry.get     'x-timer': 'S1401036934.390683,VS0,VE204',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly lockFile 212e188e-potractor potractor@
+28 silly lockFile 212e188e-potractor potractor@
+29 error 404 'potractor' is not in the npm registry.
+29 error 404 You should bug the author to publish it
+29 error 404 It was specified as a dependency of 'CarComparison'
+29 error 404
+29 error 404 Note that you can also install from a
+29 error 404 tarball, folder, or http url, or git url.
+30 error System Windows_NT 6.2.9200
+31 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "potractor"
+32 error cwd C:\Code\GitHub\CarComparison
+33 error node -v v0.10.26
+34 error npm -v 1.4.3
+35 error code E404
+36 verbose exit [ 1, true ]

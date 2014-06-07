@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1003]C:\Code\GitHub\CarComparison\CarComparison.Tests\bin\Debug\CarComparison.Tests.dll</TopNode>
+  <SelectedNode>[0-1003]C:\Code\GitHub\CarComparison\CarComparison.Tests\bin\Debug\CarComparison.Tests.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1003]C:\Code\GitHub\CarComparison\CarComparison.Tests\bin\Debug\CarComparison.Tests.dll" Expanded="true" />
+    <Node UniqueName="[0-1004]CarComparison" Expanded="true" />
+    <Node UniqueName="[0-1005]CarComparison.Tests" Expanded="true" />
+    <Node UniqueName="[0-1006]CarComparison.Tests.Controllers" Expanded="true" />
+    <Node UniqueName="[0-1000]CarComparison.Tests.Controllers.HomeControllerTest" Expanded="true" />
+  </Nodes>
+</VisualState>

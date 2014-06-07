@@ -13,28 +13,43 @@ namespace CarCompairsonAPI.Tests.Controllers
     public class CarControllerTest
     {
         private ICarRepository _mockCarRepository;
-        private CarController _carController;
+        private ICarController _mockCarController;
+        private CarController carController;
 
         [SetUp]
         public void SetupTests()
         {
             _mockCarRepository = MockRepository.GenerateMock<ICarRepository>();
-            _carController = new CarController();
+            carController = new CarController();
         }
 
         [Test]
         public void Get()
         {
-            // Arrange
-            _mockCarRepository.Expect(x => x.GetAllCars())
-                              .Repeat.Once()
-                              .Return(new List<Car>());
-            
-            // Act
-            var result = _carController.Post(new Car { });
+            //Arrange
+            var carList = new List<Car>() 
+            { new Car
+                { 
+                    Name = "Test", 
+                    Model = new Model
+                    { 
+                        Name = "TestModel" 
+                    } 
+                } 
+            };
 
-            // Assert
+            _mockCarRepository.Stub(x => x.GetAllCars())
+                  .Repeat.Once()
+                  .Return(carList);
+
+            carController.carRepository = _mockCarRepository;
+
+            // Act
+            var result = carController.Get();
+
+            //Assert
             Assert.IsNotNull(result);
+            _mockCarRepository.VerifyAllExpectations();
         }
 
 
@@ -49,8 +64,10 @@ namespace CarCompairsonAPI.Tests.Controllers
                               .Repeat.Once()
                               .Return(new Car { Id = 1 });
 
+            carController.carRepository = _mockCarRepository;
+
             // Act
-            var result = _carController.Get(1);
+            var result = carController.Get(1);
 
             // Assert
             Assert.IsNotNull(result);
@@ -60,7 +77,21 @@ namespace CarCompairsonAPI.Tests.Controllers
         [Test]
         public void Create()
         {
+            // Arrange
+            var car = new Car { };
 
+            _mockCarRepository.Expect(x => x.AddCar(car))
+                              .Repeat.Once()
+                              .Return(car);
+
+            carController.carRepository = _mockCarRepository;
+
+            // Act
+            var result = carController.Post(car);
+
+            // Assert
+            Assert.IsNotNull(result);
+            _mockCarRepository.VerifyAllExpectations();
         }
 
     }

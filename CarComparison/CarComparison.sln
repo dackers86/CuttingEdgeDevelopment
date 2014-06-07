@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCompairsonAPI", "CarComp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarCompairsonAPI.Tests", "CarCompairsonAPI.Tests\CarCompairsonAPI.Tests.csproj", "{D263A2D6-4772-4876-9995-01D664BB899A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualUnitTesting", "VisualUnitTesting\VisualUnitTesting.csproj", "{F153DFEC-2911-472B-B7A5-8D3ABDE6B5B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{D263A2D6-4772-4876-9995-01D664BB899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D263A2D6-4772-4876-9995-01D664BB899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D263A2D6-4772-4876-9995-01D664BB899A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F153DFEC-2911-472B-B7A5-8D3ABDE6B5B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F153DFEC-2911-472B-B7A5-8D3ABDE6B5B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F153DFEC-2911-472B-B7A5-8D3ABDE6B5B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F153DFEC-2911-472B-B7A5-8D3ABDE6B5B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

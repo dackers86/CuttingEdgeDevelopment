@@ -1,0 +1,11 @@
+﻿<ul>
+    <li ng-repeat="model in searchResult  | filter:searchQuery">
+        <!--<div ng-show="{{model.NoughtToSixty <= searchQuery.NoughtToSixty}}">-->
+        <div>
+            {{model.Manufacturer.Name}} 
+            {{model.Name}}
+            {{model.NoughtToSixty}}
+        </div>
+    </li>
+</ul>
+
